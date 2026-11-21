@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXCHANGE | Global Currency Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <main class="app-container">
+
+        <!-- NAVBAR -->
+
+        <nav class="navbar">
+
+            <div class="brand">
+                <div class="brand-icon">N</div>
+
+                <span>NEXCHANGE<span class="brand-dot">.</span></span>
+            </div>
+
+            <div class="nav-right">
+                <span class="live-dot"></span>
+                LIVE EXCHANGE
+            </div>
+
+        </nav>
+
+
+        <!-- MAIN SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    GLOBAL CURRENCY EXCHANGE
+                </span>
+
+                <h1>
+                    Money moves.<br>
+                    <span>We convert.</span>
+                </h1>
+
+                <p>
+                    Experience seamless currency conversion with
+                    fast exchange rates and a smarter way to
+                    calculate your money.
+                </p>
+
+                <div class="hero-features">
+                    <span>✦ Fast Conversion</span>
+                    <span>✦ Global Currencies</span>
+                    <span>✦ Simple & Secure</span>
+                </div>
+
+            </div>
+
+
+            <!-- CONVERTER CARD -->
+
+            <div class="converter-card">
+
+                <div class="card-top">
+
+                    <div>
+                        <span class="card-label">CURRENCY CONVERTER</span>
+                        <h2>Exchange currencies</h2>
+                    </div>
+
+                    <div class="card-icon">⇄</div>
+
+                </div>
+
+
+                <form>
+
+                    <!-- AMOUNT -->
+
+                    <div class="amount">
+
+                        <label>YOU SEND</label>
+
+                        <div class="amount-box">
+
+                            <span class="amount-symbol">$</span>
+
+                            <input
+                                type="number"
+                                value="1"
+                                min="0.01"
+                                step="any"
+                                placeholder="Enter amount"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CURRENCY SELECTION -->
+
+                    <div class="currency-area">
+
+                        <div class="dropdown from">
+
+                            <label>FROM</label>
+
+                            <div class="currency-select">
+
+                                <img
+                                    src="https://flagsapi.com/US/flat/64.png"
+                                    alt="From currency"
+                                >
+
+                                <select name="from"></select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="swap-divider">
+
+                            <span>⇄</span>
+
+                        </div>
+
+
+                        <div class="dropdown to">
+
+                            <label>TO</label>
+
+                            <div class="currency-select">
+
+                                <img
+                                    src="https://flagsapi.com/IN/flat/64.png"
+                                    alt="To currency"
+                                >
+
+                                <select name="to"></select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONVERT BUTTON -->
+
+                    <button type="submit">
+
+                        <span>Convert Currency</span>
+
+                        <span class="convert-arrow">↗</span>
+
+                    </button>
+
+
+                    <!-- RESULT SECTION -->
+
+                    <div class="result-card">
+
+                        <div class="result-header">
+
+                            <span>CONVERSION RESULT</span>
+
+                            <span class="result-indicator">
+                                ● RESULT
+                            </span>
+
+                        </div>
+
+
+                        <div class="result-main">
+
+                            <p class="msg">
+                                Getting exchange rate...
+                            </p>
+
+                        </div>
+
+
+                        <div class="result-footer">
+
+                            <span>Powered by Frankfurter API</span>
+
+                            <span>Real-time lookup</span>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTTOM INFORMATION -->
+
+        <section class="bottom-info">
+
+            <div class="info-item">
+
+                <span class="info-number">01</span>
+
+                <div>
+                    <h3>Simple</h3>
+                    <p>Easy currency selection</p>
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-number">02</span>
+
+                <div>
+                    <h3>Fast</h3>
+                    <p>Quick API-based conversion</p>
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-number">03</span>
+
+                <div>
+                    <h3>Global</h3>
+                    <p>Multiple currency support</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div class="footer-brand">
+                NEXCHANGE<span>.</span>
+            </div>
+
+            <p>Designed for a world without currency boundaries.</p>
+
+            <p>© 2026 NEXCHANGE. All rights reserved.</p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
